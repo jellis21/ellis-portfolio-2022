@@ -1,18 +1,26 @@
+/* General */
 body::before {
   display: block;
   content: '';
   height: 60px;
 }
-
 #map {
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
-
 .background-gradient {
   background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
 }
+a {
+  text-decoration: none;
+  color: darkorange;
+}
+a:active,
+a:hover {
+  color: orange
+}
+
 
 /* Hero Section */
 #hero {
@@ -99,7 +107,15 @@ body::before {
   width: 100px;
 }
 
+/* Contact & Map */
+.social-links a {
+  display: block;
+  margin-left: 25px;
+}
 
+.social-links a {
+  display: inline-block;
+}
 
 /* Custom media query for the Showcase image */
 @media only screen and (min-width: 768px) {
