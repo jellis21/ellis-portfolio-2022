@@ -1,8 +1,17 @@
 /* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body::before {
   display: block;
   content: '';
   height: 60px;
+}
+h1,
+h2 {
+  color: #2c4964;
 }
 #map {
   width: 100%;
@@ -14,11 +23,11 @@ body::before {
 }
 a {
   text-decoration: none;
-  color: darkorange;
+  color: #2c4964;
 }
 a:active,
 a:hover {
-  color: orange
+  color: #3d5b77
 }
 
 
@@ -42,7 +51,7 @@ a:hover {
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: 300;
-  font-family: "Poppins", sans-serif;
+  font-family: sans-serif;
 }
 #hero .btn-get-started {
   font-size: 64px;
@@ -52,7 +61,7 @@ a:hover {
 }
 #hero .btn-get-started:hover {
   padding-top: 10px;
-  color: #e67e08;
+  color: #2c4964;
 }
 @media (min-width: 1024px) {
   #hero {
@@ -99,7 +108,7 @@ a:hover {
   margin: 0 0 6px 0;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: sans-serif;
   color: #2c4964;
 }
 .experience-img {
