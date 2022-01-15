@@ -20,6 +20,9 @@ h2,
 h3 {
   color: #2c4964;
 }
+.landing-titles {
+  margin-top: 20px;
+}
 main {
   flex-grow: 1;
 }
@@ -117,6 +120,14 @@ a:hover {
   width: 100px;
 }
 
+/* Portfolio */
+#placeholder,
+#pokemon,
+#flashcard,
+#onswipe {
+  border-bottom: 1px solid #eee;
+}
+
 /* Contact & Map */
 .social-links a {
   display: block;
@@ -127,7 +138,7 @@ a:hover {
   display: inline-block;
 }
 
-/* Portfolio Pages */
+/* Portfolio Webpages */
 .portfolio-title {
   margin: 20px;
 }
