@@ -1,117 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joshua Ellis - onswipe</title>
-    <!-- Favicons -->
-    <link href="./img/suit-spade-fill.svg" rel="icon" />
-    <link href="./img/suit-spade-fill.svg" rel="apple-touch-icon" />
-    <!-- Bootstrap css -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous"
-    />
-    <!-- Bootstrap icons css -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-    <!-- My custom css -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 fixed-top"
-    >
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joshua Ellis - onswipe</title>
+  <!-- Favicons -->
+  <link href="./img/suit-spade-fill.svg" rel="icon" />
+  <link href="./img/suit-spade-fill.svg" rel="apple-touch-icon" />
+  <!-- Bootstrap css -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+    crossorigin="anonymous" />
+  <!-- Bootstrap icons css -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <!-- My custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 fixed-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">Joshua Ellis</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="./index.html#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="./index.html#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="./index.html#contact" class="nav-link">Contact Info</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1 class="portfolio-title text-center" id="onswipe">onswipe</h1>
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
       <div class="container">
-        <a href="#" class="navbar-brand">Joshua Ellis</a>
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <!-- Carousel -->
+            <div id="onswipe-carousel" class="carousel slide bg-secondary"
+              data-bs-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"></li>
+                <li data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-flex justify-content-center">
+                    <img class="carousel-image"
+                      src="./img/onswipe-images/onswipe-screenshot.png"
+                      class="d-block w-100" alt="landing page" />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="carousel-image"
+                      src="./img/onswipe-images/onswipe-card.png"
+                      class="d-block w-100" alt="job card" />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="carousel-image"
+                      src="./img/onswipe-images/onswipe-favorites.png"
+                      class="d-block w-100" alt="favorites list" />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="carousel-image"
+                      src="./img/onswipe-images/onswipe-modal.png"
+                      class="d-block w-100" alt="favorites list modal" />
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#onswipe-carousel"
+                role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+                <span class="sr-only"></span>
+              </a>
+              <a class="carousel-control-next" href="#onswipe-carousel"
+                role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+                <span class="sr-only"></span>
+              </a>
+            </div>
+          </div>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="./index.html#skills" class="nav-link">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a href="./index.html#portfolio" class="nav-link">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="./index.html#contact" class="nav-link">Contact Info</a>
-            </li>
-          </ul>
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Project Type</strong>: DigitalCrafts Atlanta group
+                  project</li>
+                <li><strong>Project Date</strong>: September 2021</li>
+                <li><strong>Project URL</strong>: placeholder</li>
+                <li><strong>GitHub Repo</strong>: <a
+                    href="https://github.com/jellis21/onswipe">onswipe</a></li>
+                <li><strong>Technologies Used</strong>: HTML, CSS, vanilla
+                  JavaScript</li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h3>Browse up-to-date jobs in the tech industry</h3>
+              <p>
+                The application takes inspiration from social dating apps where
+                the user “swipes” left or right to match with other users. To
+                begin, the user decides what kind of tech job to search for and
+                where they would like to be located. Jobs are sourced from two
+                APIs: <a
+                  href="https://www.themuse.com/developers/api/v2">themuse.com</a>
+                and
+                <a href="https://clearbit.com/docs#logo-api">clearbit.com</a>.
+              </p>
+              <p>
+                Once the user swipes right on a few jobs, they can review their
+                matches in their favorites list (saved to the browser's local
+                storage). On their favorites list, the user can view additional
+                information about each job, go to the company's website, and
+                remove the job from the list if no longer interested.
+              </p>
+              <p>
+                My primary responsibility was to create the JavaScript
+                functionality on the landing page. This included the API fetch
+                requests, rendering each job in the DOM, iterating through jobs,
+                and saving to local storage. This project really solidified my
+                understanding of function calls. At first, I had trouble making
+                so many events happen at once. But things really clicked when I
+                started calling functions within my fetch requests to update the
+                UI every time a new job was loaded.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+    </section>
+    <!-- End Portfolio Details Section -->
+  </main>
 
-    <main class="md">
-      <h1 class="portfolio-title">onswipe</h1>
-      <!-- Carousel -->
-      <div id="onswipe-carousel" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="d-flex justify-content-center">
-            <img class="carousel-image" src="./img/onswipe-images/onswipe-screenshot.png" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center">
-            <img class="carousel-image" src="./img/onswipe-images/onswipe-card.png" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center">
-            <img class="carousel-image" src="./img/onswipe-images/onswipe-favorites.png" class="d-block w-100" alt="...">
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#onswipe-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
-        <a class="carousel-control-next" href="#onswipe-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
-      </div>
+  <!-- Footer -->
+  <footer class="p-5 bg-secondary text-white text-center position-relative">
+    <div class="container">
+      <p class="lead">Joshua Ellis</p>
+      <a href="#onswipe" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h1"></i></a>
+    </div>
+  </footer>
 
-
-
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="p-5 bg-secondary text-white text-center position-relative">
-      <div class="container">
-        <p class="lead">Joshua Ellis</p>
-        <a href="#hero" class="position-absolute bottom-0 end-0 p-5">
-          <i class="bi bi-arrow-up-circle h1"></i
-        ></a>
-      </div>
-    </footer>
-
-    <!-- Bootstrap script -->
-    <script
+  <!-- Bootstrap script -->
+  <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>

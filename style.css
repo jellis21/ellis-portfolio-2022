@@ -16,7 +16,8 @@ body::before {
   height: 60px;
 }
 h1,
-h2 {
+h2,
+h3 {
   color: #2c4964;
 }
 main {
@@ -136,17 +137,21 @@ a:hover {
 }
 
 /* Portfolio Pages */
-.portfolio-title{
-  margin-top: 20px;
-}
-#onswipe-carousel {
-  border: 1px solid red;
-  background-color: darkslategrey;
+.portfolio-title {
+  margin: 20px;
 }
 .carousel-image {
   height: 300px;
 }
-
+.portfolio-info {
+  box-shadow: 0px 0 30px rgb(44 73 100 / 8%);
+  padding: 13px;
+}
+.portfolio-details .portfolio-info h2 {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
 
 /* Custom media query for the Showcase image */
 @media only screen and (min-width: 768px) {
@@ -155,5 +160,11 @@ a:hover {
     background-size: cover;
     min-height: 400px;
     width: 50%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .carousel-image {
+    height: 600px;
   }
 }
