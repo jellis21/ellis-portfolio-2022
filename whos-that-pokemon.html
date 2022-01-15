@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joshua Ellis - Who's That Pokémon?</title>
+  <!-- Favicons -->
+  <link href="./img/suit-spade-fill.svg" rel="icon" />
+  <link href="./img/suit-spade-fill.svg" rel="apple-touch-icon" />
+  <!-- Bootstrap css -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+    crossorigin="anonymous" />
+  <!-- Bootstrap icons css -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <!-- My custom css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 fixed-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">Joshua Ellis</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="./index.html#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="./index.html#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="./index.html#contact" class="nav-link">Contact Info</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1 class="portfolio-title text-center" id="onswipe">Who's That Pokémon?
+    </h1>
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <!-- Carousel -->
+            <div id="pokedex-carousel" class="carousel slide bg-secondary"
+              data-bs-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-bs-target="#portfolio-details"
+                  data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#portfolio-details"
+                  data-bs-slide-to="1"></li>
+                <li data-bs-target="#portfolio-details"
+                  data-bs-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-flex justify-content-center">
+                    <img class="carousel-image"
+                      src="./img/whos-that-pokemon-images/pokedex-landing.png"
+                      class="d-block w-100" alt="landing page" />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="carousel-image"
+                      src="./img/whos-that-pokemon-images/pokedex-search.png"
+                      class="d-block w-100" alt="search" />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="carousel-image"
+                      src="./img/whos-that-pokemon-images/pokedex-team.png"
+                      class="d-block w-100" alt="team" />
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#pokedex-carousel"
+                role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+                <span class="sr-only"></span>
+              </a>
+              <a class="carousel-control-next" href="#pokedex-carousel"
+                role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+                <span class="sr-only"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Project Type</strong>: DigitalCrafts Atlanta solo
+                  project</li>
+                <li><strong>Project Date</strong>: December 2021</li>
+                <li><strong>Project URL</strong>: placeholder</li>
+                <li><strong>GitHub Repo</strong>: <a
+                    href="https://github.com/jellis21/whos-that-pokemon">Who's
+                    That Pokémon?</a></li>
+                <li><strong>Technologies Used</strong>: HTML, CSS, React, Redux
+                </li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h3>Re-live your childhood memories by using this pokédex!</h3>
+              <p>
+                "Who's That Pokémon?" lets users search for their favorite
+                pokémon
+                and build their own poké team. React is the backbone of this
+                app, leveraging multiple custom-built components to create the
+                pokédex in the UI. React state changes in the Search and Teams
+                components and is updated using Redux. All information is
+                sourced from the <a href="https://pokeapi.co/">PokéAPI</a>.
+              </p>
+              <p>
+                My biggest hurdle was setting up Redux. The relationships
+                between actions, reducers, took some time to fully understand.
+                Not to mention effectively keeping track of all the Redux files.
+                I spent a considerable amount of time outside of class doing
+                research.
+              </p>
+              <p>
+                This project also really stretched my CSS knowledge. From
+                border-radius to SVGs to absolute/relative positioning &#8211 my
+                eyes were opened into how powerful and complex CSS can be (CSS
+                specificity, anyone?).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolio Details Section -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="p-5 bg-secondary text-white text-center position-relative">
+    <div class="container">
+      <p class="lead">Joshua Ellis</p>
+      <a href="#onswipe" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h1"></i></a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap script -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
