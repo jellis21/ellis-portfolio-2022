@@ -4,6 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
 body::before {
   display: block;
   content: '';
@@ -12,6 +18,9 @@ body::before {
 h1,
 h2 {
   color: #2c4964;
+}
+main {
+  flex-grow: 1;
 }
 #map {
   width: 100%;
@@ -125,6 +134,19 @@ a:hover {
 .social-links a {
   display: inline-block;
 }
+
+/* Portfolio Pages */
+.portfolio-title{
+  margin-top: 20px;
+}
+#onswipe-carousel {
+  border: 1px solid red;
+  background-color: darkslategrey;
+}
+.carousel-image {
+  height: 300px;
+}
+
 
 /* Custom media query for the Showcase image */
 @media only screen and (min-width: 768px) {
