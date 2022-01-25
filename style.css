@@ -127,6 +127,10 @@ a:hover {
 #onswipe {
   border-bottom: 1px solid #eee;
 }
+.img-fluid {
+  height: 350px;
+  width: 350px;
+}
 
 /* Contact & Map */
 .social-links a {
