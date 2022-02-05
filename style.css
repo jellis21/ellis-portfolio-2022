@@ -121,7 +121,7 @@ a:hover {
 }
 
 /* Portfolio */
-#placeholder,
+#mvgl,
 #pokemon,
 #flashcard,
 #onswipe {
@@ -130,6 +130,12 @@ a:hover {
 .img-fluid {
   height: 350px;
   width: 350px;
+}
+.image-container {
+  background: url("./img/mvgl-images/mvgl-landing.png");
+  background-size: cover;
+  height: 300px;
+  width: 300px;
 }
 
 /* Contact & Map */
