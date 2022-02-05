@@ -131,9 +131,27 @@ a:hover {
   height: 350px;
   width: 350px;
 }
-.image-container {
+#mvgl-image-container {
   background: url("./img/mvgl-images/mvgl-landing.png");
   background-size: cover;
+  height: 300px;
+  width: 300px;
+}
+#pokemon-image-container {
+  background: url("./img/whos-that-pokemon-images/pokemon-landing-screen.png");
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+}
+#flashcard-image-container {
+  background: url("./img/flashcard-app-images/flashcard-logo.png") center;
+  background-size: 120%;
+  height: 300px;
+  width: 300px;
+}
+#onswipe-image-container {
+  background: url("./img/onswipe-images/onswipe-screenshot.png") center;
+  background-size: 140%;
   height: 300px;
   width: 300px;
 }
@@ -163,6 +181,11 @@ a:hover {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
+}
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-indicators {
+  filter: invert(100%);
 }
 
 /* Custom media query for the Showcase image */
